@@ -1,0 +1,25 @@
+For each of the steps below, please provide the code created and the files produced clearly marked as Step1 and Step 2.
+Do not forget to include any instructions for us to run the work you produce.
+
+We are expecting to see well named classes, observing DRY and KISS principles.
+
+We do NOT want you to submit a framework application, so please do not submit your working as a Laravel/Lumen/Symfony/etc application.
+
+Please do not rush to complete the work, we are more interested in correctly functioning/structured code that is incomplete rather than rushed and poorly crafted code.
+
+Technical Test
+==============
+1. Craft some code that will export the following columns from the enclosed CSV files into a single JSON array of objects
+    a. Genres, just using id and name, as genres.json
+    b. Keywords, just using id and name, as keywords.json
+    c. Actors, just using id and name, as actors.json
+
+    Be aware that the data format of those columns is JSON and will need to be decoded. Each element in the resultant file should only appear in the file once.
+
+2. Create a single file, movies.json, that contains an array of JSON objects for each movie, containing
+    a. the title,
+    b. budget,
+    c. a list of ids of keywords for the movie
+    d. a list of ids of genres for the movie
+    e. an array of 'character' objects that provides (only) the character name and associated actor_id for each character
+
